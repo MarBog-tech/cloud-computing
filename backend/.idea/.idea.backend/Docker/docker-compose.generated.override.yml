@@ -1,0 +1,39 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.8"
+services:
+  backend1:
+    build:
+      context: "D:\\Study\\cloud-computing-labs\\backend\\backend"
+      dockerfile: "Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/backend.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "backend:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\march\\.nuget\\packages:/home/app/.nuget/packages"
+    - "D:\\Study\\cloud-computing-labs\\backend\\backend:/app:rw"
+    - "D:\\Study\\cloud-computing-labs\\backend:/src:rw"
+    working_dir: "/app"
+  backend2:
+    build:
+      context: "D:\\Study\\cloud-computing-labs\\backend\\backend"
+      dockerfile: "Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/backend.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "backend:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\march\\.nuget\\packages:/home/app/.nuget/packages"
+    - "D:\\Study\\cloud-computing-labs\\backend\\backend:/app:rw"
+    - "D:\\Study\\cloud-computing-labs\\backend:/src:rw"
+    working_dir: "/app"
