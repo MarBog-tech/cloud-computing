@@ -41,7 +41,7 @@ graph TD
 ## 🚀 Getting Started Locally
 ```bash
 # 1. Clone repo
-$ git clone https://github.com/<your‑handle>/cloud‑project.git
+$ git clone https://github.com/MarBog-tech/cloud-computing.git
 $ cd cloud‑project
 
 # 2. Spin up entire stack
